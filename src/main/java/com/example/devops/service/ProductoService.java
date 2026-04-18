@@ -36,4 +36,8 @@ public class ProductoService {
         return "Producto eliminado con exito";
     }
 
+    public Producto findById(int id) {
+        return productoRepo.findById(id);
+    }
+
 }
