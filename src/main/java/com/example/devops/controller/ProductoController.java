@@ -62,4 +62,13 @@ public class ProductoController {
         }
     }
 
+    @DeleteMapping("/all")
+    public ResponseEntity<?> deleteAll() {
+        try {
+            return new ResponseEntity<>(productoService.deleteAll(), HttpStatus.OK);
+        }catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
 }

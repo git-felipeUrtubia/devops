@@ -40,4 +40,9 @@ public class ProductoService {
         return productoRepo.findById(id);
     }
 
+    public String deleteAll() {
+        productoRepo.deleteAll();
+        return "Productos eliminados con exito";
+    }
+
 }
