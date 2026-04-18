@@ -71,4 +71,12 @@ public class ProductoController {
         }
     }
 
+    public ResponseEntity<?> productStockNoAvalible() {
+        try {
+            return new ResponseEntity<>(productoService.productStockNoAvalible(), HttpStatus.OK);
+        }catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+    }
+
 }

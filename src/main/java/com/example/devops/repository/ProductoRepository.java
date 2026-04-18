@@ -45,4 +45,10 @@ public class ProductoRepository {
         productos.clear();
     }
 
+    public List<Producto> productStockNoAvalible() {
+        return productos.stream()
+                .filter(p -> p.getStock() == 0)
+                .toList();
+    }
+
 }

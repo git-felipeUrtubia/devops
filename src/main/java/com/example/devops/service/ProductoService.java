@@ -45,4 +45,8 @@ public class ProductoService {
         return "Productos eliminados con exito";
     }
 
+    public List<Producto> productStockNoAvalible() {
+        return productoRepo.productStockNoAvalible();
+    }
+
 }
