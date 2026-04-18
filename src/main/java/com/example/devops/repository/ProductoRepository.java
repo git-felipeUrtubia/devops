@@ -34,11 +34,11 @@ public class ProductoRepository {
         productos.removeIf(p -> p.getId() == id);
     }
 
-//    public Producto findById(int id) {
-//        return productos.stream()
-//                .filter(p -> p.getId() == id)
-//                .findFirst()
-//                .orElse(null);
-//    }
+    public Producto findById(int id) {
+        return productos.stream()
+                .filter(p -> p.getId() == id)
+                .findFirst()
+                .orElse(null);
+    }
 
 }
