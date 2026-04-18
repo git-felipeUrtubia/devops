@@ -41,4 +41,8 @@ public class ProductoRepository {
                 .orElse(null);
     }
 
+    public void deleteAll() {
+        productos.clear();
+    }
+
 }

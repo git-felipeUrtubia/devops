@@ -36,4 +36,13 @@ public class ProductoService {
         return "Producto eliminado con exito";
     }
 
+    public Producto findById(int id) {
+        return productoRepo.findById(id);
+    }
+
+    public String deleteAll() {
+        productoRepo.deleteAll();
+        return "Productos eliminados con exito";
+    }
+
 }
